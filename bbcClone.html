@@ -37,6 +37,18 @@
             max-height: 25px;
         }
         
+        #BBCprint{
+            margin-top: -95px;
+            margin-right: -64px;
+            background-color: blue;
+            float: right;
+        }
+        
+        #BBCprint img {
+            height: 95px;
+            width: 100px;
+        }
+        
         .logoDiv{
 
             float: left;
@@ -156,6 +168,87 @@
             padding: 0 8px 0px 8px;
             border-right: 1px solid #640001;
         } 
+        
+        #content{
+            width: 100%;
+            color: #484848;
+            font-size: 0.8em;
+        
+        }
+        
+        #content h1 {
+            color: black;
+        }
+        
+        .date01{
+            font-weight: bold;
+        }
+        
+        .resizeImgs{
+            float: left;
+            width: 35%;
+            height: 35%;
+        }
+        
+        .newsBox{
+            position: relative;
+            left: 10px;
+            top: -15px;
+            width: 250px;
+            float: left;
+            font-size: 1.1em;
+        }
+        
+        .newsBox a {
+            color: black;
+            float: left;
+            text-decoration: none;
+        }
+        
+        .newsBox a:hover {
+            color: #5961F4;
+            text-decoration: underline;
+        }
+        
+        .timeMarks{
+            width: 125px;
+            padding-bottom: 25px;
+        }
+        
+        .timeMarks img {
+            float: left;
+            height: 20px;
+            width: 25px;
+        }
+        
+        .timeMarks p {
+            margin-top: 1px;
+            margin-left: 10px;
+            float: left;
+        }
+        
+        .zoneMarks{
+            position: relative;
+            top: -25px;
+            left: 15px;
+            float: left;
+            width: 75px;
+            height: 20px;
+            border-left: 1px solid grey;
+        }
+        
+        .zoneMarks p {
+            color: firebrick;
+            margin-top: 0;
+            margin-left: 10px;
+        }
+        
+        .playButton{
+            width: 20px;
+            height: auto;
+            float: left;
+            clear: left;
+        }
 
 
     </style>    
@@ -168,7 +261,7 @@
     <div id="hiTopBar">
         
         <div class="fixedWidth">
-            
+                        
             <div class="logoDiv">
                 <img src="Images/bbcLogo.png" id="bbcLogo"/>
             </div>
@@ -226,11 +319,47 @@
                     <li style="border-right:none;">Other</li>
                 </ul>
             </div>
-
-           
+            
+        <!-- <div id="BBCprint" ><img src="Images/logo_4.png"/></div> -->
+            
         </div>
             
     </div>
+    
+    <div class="breakDiv"></div>
+    
+    <div id="content">
+        
+        <div class="fixedWidth">
+            <p><span class="date01">Jan 27 2016 </span>Text testing....</p>
+            <h1>Pollution Is Hovering Over England</h1>
+            <img class="resizeImgs" src="Images/picNews01.png" />
+            
+            <div class="newsBox">
+                
+                <p>French Justice Minister Christiane Taubira has stepped down from her job,
+                    shortly before plans to strip people convicted of terrorism of their
+                    citizenship go before parliament.</p>
+                
+                <div class="timeMarks">
+                <img src="Images/watch.png">
+                <p>1 hour ago</p>
+                </div>
+                
+                <div class="zoneMarks">
+                <p>Europe</p>
+                </div>
+                
+                <a href="">Some Headline Title</a>
+                <img class="playButton" src="Images/playlink.png">
+                
+            </div>
+            
+            
+            
+        </div>
+        
+    </div>    
 
     
    
