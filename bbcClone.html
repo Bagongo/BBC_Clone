@@ -18,8 +18,7 @@
             width: 100%;
             height: 40px;
             background-color: #640001;
-            color: white;
-            
+            color: white;           
         }
         
         .fixedWidth{
@@ -50,7 +49,6 @@
         }
         
         .logoDiv{
-
             float: left;
             border-right: 1px solid #7F0001;
             padding-top:  1px;
@@ -172,8 +170,7 @@
         #content{
             width: 100%;
             color: #484848;
-            font-size: 0.8em;
-        
+            font-size: 0.8em;      
         }
         
         #content h1 {
@@ -243,14 +240,86 @@
             margin-left: 10px;
         }
         
-        .playButton{
-            width: 20px;
-            height: auto;
-            float: left;
-            clear: left;
+        .videoLink{
+            background-image: url("Images/playlink.png");
+            background-repeat: no-repeat;
+            background-size: 20px 20px;
+            background-position: left center;
+            padding-left: 25px;
         }
-
-
+        
+        .linkPars{
+            line-height: 25px;
+        }
+        
+        
+        .watchListen{
+            background-color: #E8E8E8;
+            width: 360px;
+            float: right;
+            position: relative;
+            top: -50px;
+            padding-left: 20px;
+        }
+        
+        .stream1{
+            float: left;
+            width: 75px;
+            height: auto;
+            
+        }
+        
+        .watchListen h2 {
+            color: #555555;  
+            margin: 10px;
+            font-size: 1.8em;
+        }
+        
+        .wsr{
+            float: left;
+            position: relative;
+            left: 4px;
+            top: -15px;
+            font-size: 1.4em;
+            color: black;                
+        }
+        
+        .wlPics{
+            width: 150px;
+            height: auto;
+            padding: 0;
+        }
+        
+        .genNewsTitle{
+            position: relative;
+            float: left;
+            right: -160px;
+            top: -100px;
+            font-weight: bold;
+        }
+               
+        .wrapText {
+            float: left;
+            padding: 0;
+            max-width: 200px;
+            max-height: 100px;
+        }
+        
+        .watchimg {
+            height: 20px;
+            width: 25px;
+        }
+        
+        .signalTime{
+            position: relative;
+            top: -78px;
+            right: -190px;
+            float: left;
+            padding: 0;
+            margin: 0;
+        }
+        
+        
     </style>    
 </head>
     
@@ -350,18 +419,56 @@
                 <p>Europe</p>
                 </div>
                 
-                <a href="">Some Headline Title</a>
-                <img class="playButton" src="Images/playlink.png">
-                
+                <p class="linkPars">
+                <a class="videoLink" href="">Some Headline Title</a> <br />
+                <a href="">Not Video Headline Title</a> <br />
+                <a class="videoLink" href="">And Another Headline Title</a> <br />
+                <a class="videoLink" href="">And Some Other Headline Title</a> <br />
+                </p>
+               
             </div>
-            
-            
-            
+                        
+            <div class="watchListen ">
+                
+                <h2>Watch/Listen</h2>
+                <img class="stream1" src="Images/liveStreampic.png" />
+                <p class="wsr">World Service radio</p>
+                
+                <div class="wrapText">
+
+                    <img class="wlPics" src="Images/WL01.png" />
+                    <p class="genNewsTitle">Some Rough Altercation Ongoing</p>
+
+                    <img class="watchimg" src="Images/watch.png"  />
+                    <p class="signalTime">1 hour ago</p>
+
+                </div>
+                
+                <div class="wrapText">
+
+                    <img class="wlPics" src="Images/Wl03.png" />
+                    <p class="genNewsTitle">Some Rough Altercation Ongoing</p>
+
+                    <img class="watchimg" src="Images/watch.png"  />
+                    <p class="signalTime">1 hour ago</p>
+
+                </div>
+                
+                <div class="wrapText">
+
+                    <img class="wlPics" src="Images/WL04.png" />
+                    <p class="genNewsTitle">Some Rough Altercation Ongoing</p>
+
+                    <img class="watchimg" src="Images/watch.png"  />
+                    <p class="signalTime">1 hour ago</p>
+
+                </div>
+                                   
+            </div>
+                        
         </div>
         
     </div>    
-
-    
    
 </div>
 </body>
